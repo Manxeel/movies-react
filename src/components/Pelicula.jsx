@@ -11,8 +11,6 @@ const Pelicula = ({pelicula, detalles = true, proveedores = null}) => {
       second = (second < 10)? '0' + second : second;
       return hour + ':' + minute + ':' + second;
     }
-  
-    console.log(proveedores)
     return (
     <div className='p-2'>
         <h1 className='uppercase font-bold text-center'>{pelicula.title}</h1>

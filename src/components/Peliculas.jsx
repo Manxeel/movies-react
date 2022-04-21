@@ -19,13 +19,12 @@ const Peliculas = ({peliculasGenero}) => {
         {peliculasGenero && peliculasGenero.length > 0 ? 
         (
         <>
-        {peliculasGenero.map((pelicula, index) => (
+        {peliculasGenero.map((peliculaGenre, index) => (
         <div className='container mx-auto p-5 ' key={index}>
             <div className='bg-white rounded-md shadow-black shadow-md'>
                 <Pelicula 
                     key={index}
-                    pelicula={pelicula}
-
+                    pelicula={peliculaGenre}
                 />
             </div>
         </div>
